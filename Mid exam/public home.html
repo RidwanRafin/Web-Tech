@@ -1,0 +1,26 @@
+<?php
+include_once("../controller/sessioncheck.php");
+require_once('../model/userModel.php');
+
+$user = getUser($_SESSION['userId']); 
+?>
+<center>
+	<h1>Welcome to xCompany <?php echo $user['name'];?>!</h1>
+	<a href="home.php">Profile</a>
+	<br/>
+	<a href="login.php">Login</a>
+	<br/>
+	<a href="registration.php">Registration</a>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
